@@ -28,7 +28,7 @@ const Login = () => {
             return;
         }
                  
-        let result = await fetch("http://localhost:7100/login", {
+        let result = await fetch("http://www.api.jigsawplanet.online/login", {
             method: "post",
             body: JSON.stringify({ email, password }),
             headers: {
@@ -160,7 +160,7 @@ export default Login;
 
 //     const loginUser = async (e) => {
 //         e.preventDefault();
-//         let result = await fetch("http://localhost:7100/login", {
+//         let result = await fetch("http://www.api.jigsawplanet.online/login", {
 //             method: "post",
 //             body: JSON.stringify({ email, password }),
 //             headers: {

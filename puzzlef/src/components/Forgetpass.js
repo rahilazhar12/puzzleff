@@ -37,7 +37,7 @@ const Forgetpass = () => {
         }
 
         try {
-            let result = await fetch("http://localhost:7100/forgetpassword", {
+            let result = await fetch("http://www.api.jigsawplanet.online/forgetpassword", {
                 method: "post",
                 body: JSON.stringify({ email, newpassword, confirmpassword }),
                 headers: {

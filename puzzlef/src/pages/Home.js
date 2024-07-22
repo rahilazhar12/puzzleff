@@ -29,7 +29,7 @@ const Home = () => {
             return;
         }
 
-        let comresult = await fetch("http://127.0.0.1:7100/usercomment", {
+        let comresult = await fetch("http://www.api.jigsawplanet.online/usercomment", {
             method: "post",
             body: JSON.stringify({ comment, rating }),
             headers: {
@@ -49,7 +49,7 @@ const Home = () => {
 
     const CommentList = async () => {
         try {
-            let artresult = await fetch("http://127.0.0.1:7100/getusercomment");
+            let artresult = await fetch("http://www.api.jigsawplanet.online/getusercomment");
             artresult = await artresult.json();
             setGetComment(artresult);
         } catch (error) {
@@ -75,7 +75,7 @@ const Home = () => {
 
     const ArticleList = async () => {
         try {
-            let artresult = await fetch("http://127.0.0.1:7100/article");
+            let artresult = await fetch("http://www.api.jigsawplanet.online/article");
             artresult = await artresult.json();
             console.log(artresult);
             setUserart(artresult);
@@ -90,7 +90,7 @@ const Home = () => {
 
     const deleteUser = async (id) => {
         try {
-            let result = await fetch(`http://127.0.0.1:7100/delarticle/${id}`, {
+            let result = await fetch(`http://www.api.jigsawplanet.online/delarticle/${id}`, {
                 method: "DELETE",
             });
             let data = await result.json();
@@ -108,7 +108,7 @@ const Home = () => {
 
     const deleteUserRating = async (id) => {
         try {
-            let result = await fetch(`http://127.0.0.1:7100/delrating/${id}`, {
+            let result = await fetch(`http://www.api.jigsawplanet.online/delrating/${id}`, {
                 method: "DELETE",
             });
             let data = await result.json();
@@ -134,7 +134,7 @@ const Home = () => {
                                 <h4>{ele.title}</h4>
                             </div>
                             <div>
-                                <img className="winner" src={`http://localhost:7100/uploads/${ele.file}`} alt={ele.title} />
+                                <img className="winner" src={`http://www.api.jigsawplanet.online/uploads/${ele.file}`} alt={ele.title} />
                             </div>
                         </div>
                         {nextAuth === 'admin' && (
