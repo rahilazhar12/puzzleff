@@ -33,7 +33,7 @@ const Dashboard = () => {
         formData.append("content", content);
 
         console.log(formData)
-        const response = await fetch("http://www.api.jigsawplanet.online/upload", {
+        const response = await fetch("https://www.api.jigsawplanet.online/upload", {
             method: "POST",
             body: formData
         });

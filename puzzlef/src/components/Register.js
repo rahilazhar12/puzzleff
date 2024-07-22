@@ -47,7 +47,7 @@ const Register = () => {
       return;
     }
 
-    let result = await fetch("http://www.api.jigsawplanet.online/register", {
+    let result = await fetch("https://www.api.jigsawplanet.online/register", {
       method: "post",
       body: JSON.stringify({ name, email, address, password }),
       headers: {

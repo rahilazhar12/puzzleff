@@ -16,7 +16,7 @@ const Changerule = () => {
         e.preventDefault();
 
         try {
-            let result = await fetch("http://www.api.jigsawplanet.online/changerule", {
+            let result = await fetch("https://www.api.jigsawplanet.online/changerule", {
                 method: "post",
                 body: JSON.stringify({ email, newRole, confirmRole }),
                 headers: {
@@ -129,7 +129,7 @@ export default Changerule;
 //         e.preventDefault();
 
 //         try {
-//             let result = await fetch("http://www.api.jigsawplanet.online/changerule", {
+//             let result = await fetch("https://www.api.jigsawplanet.online/changerule", {
 //                 method: "post",
 //                 body: JSON.stringify({ email, newrole, confirmrole }),
 //                 headers: {
