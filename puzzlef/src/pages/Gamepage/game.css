@@ -1,0 +1,92 @@
+.img{
+    background: linear-gradient(45deg, #b66e6e, #415b83, #528e54, #3498db);
+    border-radius: 30px;
+    width:340px;
+    height: 400px;
+    align-content: center;
+}
+
+.info {
+    color: white;
+    margin-top: 3px;
+}
+
+.btn {
+    color: white;
+    border-radius: 5px;
+    margin-left: 70px;
+    
+}
+
+.level {
+    margin: 5px 0px;
+}
+
+.des {
+    color: white;
+    font-size: larger;
+    font-style: italic;
+}
+.puzzleimg{
+    background-color: white;
+    border-radius: 30px;
+    height: 150px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.top2{
+    margin-top: 70px;
+    margin-left: 25px;
+}
+
+.box{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.button1{
+    margin-left: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main{
+    margin-top: 20px;
+    border-radius: 40px;
+}
+
+.inner{
+    margin-top: 20px;
+    background: linear-gradient(45deg, #a43535, #295ba4, #7dc87f, rgb(57, 52, 219));
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+.innerimg{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-block-end: 20px;
+    border-radius: 30px;
+    height: 180px;
+    width: 250px;
+}
+.img2{
+    background: linear-gradient(45deg, #b66e6e, #415b83, #528e54, #3498db);
+    border-radius: 30px;
+    width:340px;
+    height: 480px;
+    align-content: center;
+}
+.video{
+border-radius: 30px;
+}
+.red{
+    color: red;
+    font-size:30px;
+    font-style: italic;
+}
